@@ -1,0 +1,21 @@
+version: '3'
+services:
+    mongo:
+        image: mongo:5.0
+        restart: always
+        ports:
+            - 27017:27017
+        volumes:
+            - $PWD/nodejs-ts-fullstackopen/db:/data/db 
+    server: 
+        depends_on: 
+            - mongo
+        image: nodejs-ts-fullstackopen:v1
+        restart: always
+        container_name: nodejs_ts_app
+        environment: 
+            SENTRY_URL: "https://799d2af93f064df382ef1e4f9328a915@o925443.ingest.sentry.io/5874384"
+            PORT: 8000
+            MONGODB_URI: "mongodb://mongo:27017/phonebook"
+        ports:
+            - 8000:8000

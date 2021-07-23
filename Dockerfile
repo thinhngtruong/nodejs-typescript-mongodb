@@ -8,6 +8,5 @@ COPY package-lock.json package-lock.json
 RUN npm install
 
 COPY dist .  
-RUN npm run build
 
 CMD ["node", "server.js"]

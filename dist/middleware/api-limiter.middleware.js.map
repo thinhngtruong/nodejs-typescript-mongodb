@@ -1,0 +1,1 @@
+{"version":3,"file":"api-limiter.middleware.js","sourceRoot":"","sources":["../../src/middleware/api-limiter.middleware.ts"],"names":[],"mappings":";;;;;;AAAA,4EAA2C;AAE3C,eAAe;AACF,QAAA,UAAU,GAAG,4BAAS,CAAC;IACnC,QAAQ,EAAE,EAAE,GAAG,EAAE,GAAG,IAAI;IACxB,GAAG,EAAE,GAAG;IACR,MAAM,EAAE,GAAG;IACX,OAAO,EAAE;QACR,KAAK,EAAE,wEAAwE;KAC/E;CACD,CAAC,CAAC"}
